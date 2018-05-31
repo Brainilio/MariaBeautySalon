@@ -1,0 +1,39 @@
+ db name = reservationsystem
+
+// create  table //
+
+CREATE TABLE reserveringen ( 
+id INT(22) AUTO_INCREMENT PRIMARY KEY, 
+naam varchar(30) NOT NULL, 
+achternaam varchar(30) NOT NULL, 
+telefoon varchar(11) NOT NULL, 
+datum varchar(30) NOT NULL, 
+werknemer varchar(30) NOT NULL, 
+afspraken varchar(30) NOT NULL, 
+Email varchar(30) NOT NULL, 
+tijd varchar(30) NOT NULL
+);
+
+db name = loginsystem
+
+// create table // 
+
+CREATE TABLE users ( 
+user_id INT(22) AUTO_INCREMENT PRIMARY KEY, 
+username VARCHAR(30), 
+password VARCHAR(30), 
+);
+
+// create accounts // 
+
+INSERT INTO users (username, password)
+VALUES (Maria, 1234);
+
+INSERT INTO users (username, password)
+VALUES (Regina, 1234);
+
+INSERT INTO users (username, password)
+VALUES (Sandra, 1234);
+
+INSERT INTO users (username, password)
+VALUES (Rita, 1234);
